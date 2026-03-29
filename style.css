@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #000;
+
+}
+
+.container {
+    text-align: center;
+    margin: 350px auto;
+    background: #7b7a7a;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+input, button {
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    text-align: center;
+    font-weight: 600;
+}
