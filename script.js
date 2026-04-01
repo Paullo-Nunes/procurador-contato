@@ -11,9 +11,19 @@ const contacts = [
 ]
 
 function search() {
-    for (let i = 0; i < contacts.length; i++) {
-        if (input.value.toLocaleLowerCase() === contacts[i].name.toLocaleLowerCase()) {
-            p.innerHTML = `Contato encontrado: ${contacts[i].name} Tel.: ${contacts[i].number}`
+    // for (let i = 0; i < contacts.length; i++) {
+    //     if (input.value.toLocaleLowerCase() === contacts[i].name.toLocaleLowerCase()) {
+    //         p.innerHTML = `Contato encontrado: ${contacts[i].name} Tel.: ${contacts[i].number}`
+    //         break
+            
+    //     } else {
+    //         p.innerHTML= `Contato não encontrado, tente novamente.`
+    //     } 
+        
+    // }
+    for (const contact of contacts) {
+        if (input.value.toLocaleLowerCase() === contact.name.toLocaleLowerCase()) {
+            p.innerHTML = `Contato encontrado: ${contact.name} Tel.: ${contact.number}`
             break
             
         } else {
